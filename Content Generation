@@ -1,0 +1,13 @@
+def bulk_meta_description_generation(product_list):
+    meta_descriptions = []
+    for product in product_list:
+        meta_description = generate_meta_description(product['title'], product['keyword'])
+        meta_descriptions.append({'title': product['title'], 'meta_description': meta_description})
+    return meta_descriptions
+
+products = [
+    {'title': 'Smartphone with 64MP Camera', 'keyword': 'Smartphone'},
+    {'title': 'Laptop with 16GB RAM', 'keyword': 'Laptop'}
+]
+
+print(bulk_meta_description_generation(products))
