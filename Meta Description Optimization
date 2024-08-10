@@ -1,0 +1,5 @@
+def generate_meta_description(title, primary_keyword):
+    meta_description = f"Buy {primary_keyword} - {title} at best prices on Flipkart. Check out features, specifications, and customer reviews."
+    return meta_description if len(meta_description) <= 160 else meta_description[:157] + "..."
+
+print(generate_meta_description("Best Smartphone with 64MP Camera", "Smartphone"))
