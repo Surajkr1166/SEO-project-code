@@ -1,0 +1,10 @@
+def optimize_title(title, primary_keyword):
+    if primary_keyword.lower() in title.lower():
+        print(f"Title is already optimized: {title}")
+    else:
+        optimized_title = f"{primary_keyword} | {title}"
+        if len(optimized_title) > 60:
+            optimized_title = optimized_title[:60] + "..."
+        print(f"Optimized Title: {optimized_title}")
+
+optimize_title("Best Smartphone with 64MP Camera", "Smartphone")
