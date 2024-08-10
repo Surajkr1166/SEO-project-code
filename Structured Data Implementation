@@ -1,0 +1,20 @@
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org/",
+  "@type": "Product",
+  "name": "Smartphone",
+  "image": "https://www.flipkart.com/image.jpg",
+  "description": "Best Smartphone with 64MP Camera",
+  "brand": {
+    "@type": "Brand",
+    "name": "BrandName"
+  },
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "INR",
+    "price": "14999",
+    "itemCondition": "http://schema.org/NewCondition",
+    "availability": "http://schema.org/InStock"
+  }
+}
+</script>
